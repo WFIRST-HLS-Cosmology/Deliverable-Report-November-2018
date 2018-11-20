@@ -1,0 +1,147 @@
+\documentclass[letter]{ar-1col_WFIRST-HLS}
+
+% New Package
+\usepackage{pdfpages}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{array}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+%\usepackage{pdfpages}
+
+\definecolor{pink_loc}{cmyk}{0, 0.7808, 0.4429, 0.1412}
+\definecolor{coralpink}{rgb}{0.97, 0.51, 0.47}
+\definecolor{carminepink}{rgb}{0.92, 0.3, 0.26}
+\definecolor{burntsienna}{rgb}{0.91, 0.45, 0.32}
+\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}
+%\definecolor{alizarin}{rgb}{0.82, 0.1, 0.26}
+\definecolor{alizarin}{cmyk}{0,1.0,1.0,0.30}
+
+% Good link for colors http://latexcolor.com
+
+\usepackage[colorlinks=true,
+        urlcolor=alizarin,
+        citecolor=alizarin,
+        linkcolor=alizarin,
+        linkcolor=alizarin,
+        filecolor=alizarin,
+        setpagesize=false]{hyperref}     % \ref{...} and \pageref{...}
+        %pdftitle={Papers by AUTHOR},%
+        %pdfauthor={Your Name},
+        %pdfsubject={Just a test},
+        %pdfkeywords={test testing testable},
+        %pagebackref,
+        %pdfpagemode=None,
+        %bookmarksopen=true]{hyperref}       % \ref{...} and \pageref{...}
+% \href{...}{...} external (URL)
+%        filecolor=blue,     % \href{...} local file
+
+% New Commands
+\newcommand  \beq    {\begin{equation}}
+\newcommand  \cm     {{\rm \,cm}}
+\newcommand  \eeq    {\end{equation}}
+\newcommand  \gtsim  {\lower.5ex\hbox{$\; \buildrel > \over \sim \;$}}
+\newcommand  \ltsim  {\lower.5ex\hbox{$\; \buildrel < \over \sim \;$}}
+\newcommand{\lap}{$\stackrel{<}{_\sim}$}
+\newcommand{\gap}{$\stackrel{>}{_\sim}$}
+\newcommand{\fnl}{$f_{{\rm NL}}^{} $ }
+\newcommand{\gnl}{$g_{{\rm NL}}^{} $ }
+\newcommand{\taunl}{$\tau_{{\rm NL}}^{} $ }
+\newcommand{\lya}{Ly$\alpha$ }
+\newcommand{\etal}{\emph{et al.}}
+\def\ds{\displaystyle}
+\def\Sun{\odot}
+\def\sun{\hbox{$\odot$}}
+\def\hmsun{{\it h}$^{-1}$\,{\rm M$_\Sun$} }
+\def\hmpcinv{{\it h}\,{\rm Mpc}$^{-1}$ }
+\def\mhmpcinv{\,h\,{\rm Mpc}^{-1}}
+\def\hmpc{{\it h}$^{-1}$\,{\rm Mpc} }
+\def\mhmpc{\,h^{-1}\,{\rm Mpc}}
+\def\eg{{\it e.g.~}}
+\def\etal{{\it et al.~}}
+\def\ie{{\it i.e.~}}
+\def\ben{\begin{enumerate}}
+\def\een{\end{enumerate}}
+\def\bi{\begin{itemize}}
+\def\ei{\end{itemize}}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\vecx{{\bf x}}
+\def\veck{{\bf k}}
+\def\photoz{photo-$z$}
+\def\deg{\,{\rm deg}}
+\def\erg{\,{\rm erg}}
+\def\cm{\,{\rm cm}}
+\def\sec{\,{\rm s}}
+\def\CoLi{\texttt{CosmoLike}}
+
+\newcommand{\Oli}[1]{\textcolor{red}{[{\bf Oli}: #1]}}
+\newcommand{\subs}[1]{\textbf{\textit{#1}}} %subsection start
+\newcommand{\ue}[1]{\underline{\emph{#1}}}
+\newcommand{\Auth}[1]{\textcolor{red}{[{\bf Authors}: #1]}}
+
+\setcounter{secnumdepth}{4}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%\thispagestyle{empty}
+%\includepdf[offset = 70 -80,height=11.3in]{Plots/WFIRSTProposalCover_AnnualReport2017.jpg}
+%\cleardoublepage
+
+% Page header
+\markboth{Cosmology with the WFIRST HLS Survey Science Investigation Team}{Deliverable Report 2018}
+
+% Title
+\title{Cosmology with the WFIRST High Latitude Survey \emph{Science Investigation Team}\\
+\\
+Deliverables Report\\
+\\
+\emph{November 2018}}
+
+\pagenumbering{roman}
+\input{bib_macros} %Define collection of Journal abbreviations.
+
+%\begin{abstract}
+%Abstract text
+%\end{abstract}
+
+\maketitle
+
+\newpage
+
+%\tableofcontents
+%\thispagestyle{empty}
+
+\newpage
+\pagenumbering{arabic}
+
+%===========================
+%\section{Executive Summary}
+%===========================
+%\label{sec:executive_summary}
+%\input{section_executive-summary.tex}
+
+%==========================================
+\section{Proposed and Actual Deliverables}
+%==========================================
+\label{sec:deliverables}
+\input{section_deliverables.tex}
+
+%=========================
+\section{New Deliverables}
+%=========================
+\label{sec:new_deliverables}
+\input{section_newdeliverables.tex}
+
+\newpage
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\clearpage
+\newpage
+
+\end{document}
