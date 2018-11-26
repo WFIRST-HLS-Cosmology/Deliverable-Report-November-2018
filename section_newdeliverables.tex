@@ -20,9 +20,9 @@ LSST-WFIRST pixel-level simulations and analysis. DC2 corresponds to the second
 LSST DESC data challenge (details can be found here
 \href{https://github.com/LSSTDESC/DC2-production/tree/master/Documents/DC2_Plan}{[Link]}).
 We will produce a WFIRST imaging simulation matched to DC2, utilizing the
-existing image simulation framework built by our SIT. The CosmoDC2 catalog (and
+existing image simulation framework built by our SIT. The DESC CosmoDC2 catalog (and
 if necessary instance catalogs) will serve as inputs to the WFIRST image
-simulation to create matched scenes to the LSST DC2 image simulations. The
+simulation to create matched scenes to the DESC DC2 image simulations. The
 output of the WFIRST ImSim, along with the existing DC2 pixel-level simulation
 data, will serve as a basis to study joint pixel-level analysis techniques for
 measuring shapes and photo-$z$s, in particular methods of deblending. Results
@@ -30,28 +30,26 @@ from these studies can also inform improvements to DESC DC input catalogs to
 improve realism in the near-IR. This project will lead to the production of
 (part of) the following software or dataset deliverable(s): DC2/DC3 image
 simulation for weak-lensing and photo-$z$ and supplementary simulation data for
-testing joint pixel-level processing with WFIRST. This project is part of the
-following SRM R\&D activity:software to calibrate deblender residuals with extra
-data for weak-lensing. DC2 simulation characteristics covers 5,000 sq. deg.
-Galaxies are sampled from \texttt{Galacticus} output. Magnitude information in
+testing joint pixel-level processing with WFIRST. DC2 simulation characteristics 
+covers 5,000 sq.~deg, while simulated imaging will be produced for about 300 sq.~deg.
+Galaxies are sampled from \texttt{Galacticus} output. Magnitude information is provided in
 the LSST $ugrizY$ and WFIRST filters. Both absolute magnitudes in the galaxy
 rest-frame and apparent magnitudes in the observer frame are provided for the
-SDSS and LSST filters. Magnitudes for the top-hat SED filter set are provided in
-the rest frame only.  Magnitudes extincted by host galaxy dust, including WFIRST
+SDSS and LSST filters. Magnitudes extincted by host galaxy dust, including WFIRST
 magnitudes, and emission-line strengths are computed in post-processing. Many
 galaxy properties such as SFR of the disk and bulge, metal mass, black hole mass
 and accretion, etc. are available too.
 
-Our SIT decided to create this new deliverable instead of generating WFIRST HLS
+Our SIT decided to create this new deliverable in addition to generating WFIRST HLS
 imaging simulations only as it guarantees a broader user community for these
-simulations. It is the best way to demonstrate the power of WFIRST imaging
-survey. It is also an important first collaboration effort and a foretaste of
+simulations. It is the best way to demonstrate the power of the WFIRST imaging
+survey. It is also an important first collaborative effort and a foretaste of
 what will be done when actual LSST and WFIRST data are present. It also allows
 key LSST and WFIRST experts to jointly analyze these simulations, which will
 undoubtedly enable new studies.
 
 \paragraph*{Delivery Date:} CY19, CY20
 
-\paragraph*{Status: On schedule.} Over the last few months we have established that the properties of the galaxies in the current DC2 are good enough when observed through the WFIRST bands. This project was made an official DESC project. We are now in the process of generating a few 5 sq. deg. patches of the sky which would have both LSST and WFIRST imaging. Once this is validated, we will decide whether we want to generate images for the full HLS footprint or not depending on our analysis needs. Our experience will then inform the definition of LSST DC3.Doing additional things not on this list
+\paragraph*{Status: On schedule.} Over the last few months we have established that the properties of the galaxies in the current DC2 are good enough when observed through the WFIRST bands. This project was made an official DESC project. We are now in the process of generating a few 5 sq. deg. patches of the sky which would have both LSST and WFIRST imaging. Once this is validated, we will generate 300 sq. deg. of WFIRST imaging to match existing LSST image simulation plans. We will study redshift and shape recovery both individually in each simulated survey and jointly. The outcome of this joint DESC-WFIRST project can then be factored (among other considerations) into the definition of LSST DESC DC3 and future joint simulation efforts. 
 
 \Oli{Troxel, Rachel M. Please correct or add material if need be.}
