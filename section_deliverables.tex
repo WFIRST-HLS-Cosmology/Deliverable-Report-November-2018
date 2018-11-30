@@ -248,7 +248,7 @@ from a light cone simulation and is public available at
 we are studying the impact of this effect on the BAO peak and the resulting BAO
 analysis.
 
-\item {\bf Galaxy cluster modeling. }\Oli{Heidi: Please add a few (5-10) lines and references about cluster simulation and modeling.}
+\item {\bf Galaxy cluster modeling.} The high number density of background galaxies of WFIRST is expected to revolutionize the field of weak lensing for galaxy clusters.  With this unprecedented signal-to-noise ratio, we need accurate modeling for the mass density profiles of galaxy clusters, as well as their covariance matrices, at all scales. To this end, we use cosmological N-body simulations to improve the analytical model for lensing signals and covariance matrices.  Combining large-volume light-cone ray-tracing simulations with small-volume high-resolution simulations, we quantify the gravitational lensing effect from large-scale structure and from small-scale non-linearity. With this improved modeling, we will soon provide (1) a robust forecast for an optimal, unbiased cluster data analysis method; and (2) a user-friendly software package for accurately calculating the signal and covariance matrices of cluster weak lensing.
 
 \item {\bf Systematics mitigation at the likelihood level.} \Oli{Tim: Please add a few (5-10) lines and reference about systematics in \CoLi !}
 
@@ -295,12 +295,12 @@ density of H$\alpha$-emitting galaxies \citep{Merson2018}. These mocks can be
 made publicly available if needed. We are in the process of building updated
 mock catalogs using \texttt{Galacticus} that will include spectral energy
 distributions (SEDs) for each galaxy, which will be used to construct grism
-simulations (see D3). These mock catalogues are being built using the Millennium
+simulations (see D3). These mock catalogs are being built using the Millennium
 Simulation \citep{Springel05}, which we note lacks sufficient volume for WFIRST.
 However work is also underway to apply \texttt{Galacticus} to much larger volume
 simulations.
 
-%\Oli{Albert, should I add anything else?}
+We also generated light-cone simulations using the approximate method ICE-COLA \citep{Izard2016,Izard2018}. This method lets one to trade accuracy at small scales in order to gain large speed-up factors in the computations, and this results optimal for producing massive ensembles of simulations. We currently have 500 light cone simulations of the dark matter distribution and we developed an efficient pipeline based on Ghost \citep{Bull2017} to turn these into galaxy catalogs. The resulting mock catalogs contain $\sim$ 200M galaxies over the whole sky in the redshift range from 0 to 1.4, have photometry in the u,g,r,i,z  bands (we plan to implement WFIRST bands in the future) and weak-lensing quantities. Therefore, they are suitable for covariance studies for the GRS+WL. At the moment of this report, we have run the galaxy pipeline in only one realization, which has been used for testing and validation (Izard et al. in prep., where we also use the catalogs to do a study of some observational systematics), and we plan to run the pipeline to the whole ensemble of 500 light cones in CY19.
 
 \section*{(D10) Pilot survey proposals with associated figures of merits}
 %========================================================================
